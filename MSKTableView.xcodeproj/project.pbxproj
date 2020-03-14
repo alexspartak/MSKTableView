@@ -13,6 +13,9 @@
 		FA15E1E02413B09F00BF0985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15E1DE2413B09F00BF0985 /* Main.storyboard */; };
 		FA15E1E22413B0A100BF0985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA15E1E12413B0A100BF0985 /* Assets.xcassets */; };
 		FA15E1E52413B0A100BF0985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15E1E32413B0A100BF0985 /* LaunchScreen.storyboard */; };
+		FA15E1EF2413B49D00BF0985 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15E1EE2413B49D00BF0985 /* TableViewCell.swift */; };
+		FA15E1F12413B56600BF0985 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15E1F02413B56600BF0985 /* Contact.swift */; };
+		FA2CB97824197131002E3100 /* ContactCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CB97724197131002E3100 /* ContactCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FA15E1E12413B0A100BF0985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA15E1E42413B0A100BF0985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA15E1E62413B0A100BF0985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA15E1EE2413B49D00BF0985 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FA15E1F02413B56600BF0985 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		FA2CB97724197131002E3100 /* ContactCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			children = (
 				FA15E1D72413B09F00BF0985 /* MSKTableView */,
 				FA15E1D62413B09F00BF0985 /* Products */,
+				FAEA33A92417F80000BF623D /* From */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,41 @@
 		FA15E1D72413B09F00BF0985 /* MSKTableView */ = {
 			isa = PBXGroup;
 			children = (
-				FA15E1D82413B09F00BF0985 /* AppDelegate.swift */,
-				FA15E1DA2413B09F00BF0985 /* SceneDelegate.swift */,
-				FA15E1DC2413B09F00BF0985 /* ViewController.swift */,
+				FAEA33A82417F76500BF623D /* ViewControllers */,
+				FAEA33AC2417FA2E00BF623D /* ViewCell */,
+				FA15E1F02413B56600BF0985 /* Contact.swift */,
 				FA15E1DE2413B09F00BF0985 /* Main.storyboard */,
-				FA15E1E12413B0A100BF0985 /* Assets.xcassets */,
-				FA15E1E32413B0A100BF0985 /* LaunchScreen.storyboard */,
 				FA15E1E62413B0A100BF0985 /* Info.plist */,
 			);
 			path = MSKTableView;
+			sourceTree = "<group>";
+		};
+		FAEA33A82417F76500BF623D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA15E1DC2413B09F00BF0985 /* ViewController.swift */,
+				FA2CB97724197131002E3100 /* ContactCardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAEA33A92417F80000BF623D /* From */ = {
+			isa = PBXGroup;
+			children = (
+				FA15E1D82413B09F00BF0985 /* AppDelegate.swift */,
+				FA15E1DA2413B09F00BF0985 /* SceneDelegate.swift */,
+				FA15E1E12413B0A100BF0985 /* Assets.xcassets */,
+				FA15E1E32413B0A100BF0985 /* LaunchScreen.storyboard */,
+			);
+			path = From;
+			sourceTree = "<group>";
+		};
+		FAEA33AC2417FA2E00BF623D /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA15E1EE2413B49D00BF0985 /* TableViewCell.swift */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA15E1DD2413B09F00BF0985 /* ViewController.swift in Sources */,
+				FA15E1EF2413B49D00BF0985 /* TableViewCell.swift in Sources */,
+				FA15E1F12413B56600BF0985 /* Contact.swift in Sources */,
 				FA15E1D92413B09F00BF0985 /* AppDelegate.swift in Sources */,
 				FA15E1DB2413B09F00BF0985 /* SceneDelegate.swift in Sources */,
+				FA2CB97824197131002E3100 /* ContactCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
